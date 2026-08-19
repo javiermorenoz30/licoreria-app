@@ -6,6 +6,10 @@ on:
     branches: [main]
     paths:
       - '.github/check-build-trigger'
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/check-build-trigger'
 
 permissions:
   contents: write
@@ -32,9 +36,10 @@ jobs:
         shell: bash
         run: |
           mkdir -p builds
-          eas build:list --platform android --limit 5 --json --non-interactive > builds/eas-builds-current.json
+          eas build:list --platform android --limit 5 --json --non-interactive | tee builds/eas-builds-current.json
 
       - name: Persist status
+        if: github.event_name == 'push'
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
