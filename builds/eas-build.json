@@ -1,12 +1,12 @@
 [
   {
-    "id": "89031641-88c3-4465-851d-078501a7f4ce",
+    "id": "dc55a418-04ea-4103-a0fb-189d994a70a9",
     "status": "NEW",
     "platform": "ANDROID",
     "artifacts": {},
     "fingerprint": {
-      "id": "01a01bdb-0ed9-7ee9-897a-193643a009eb",
-      "hash": "bcd25dc1210963b82fa990d1576ab634623ddd72"
+      "id": "01a01beb-2dc9-7198-aa3b-91ff1091a02f",
+      "hash": "67f34971f072ca9b4464ae5e4be6261d7d4eba19"
     },
     "initiatingActor": {
       "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
@@ -28,12 +28,12 @@
     "sdkVersion": "54.0.0",
     "appVersion": "0.1.0",
     "appBuildVersion": "1",
-    "gitCommitHash": "88e23cb6af6d0276c57b22b139a52e83bed5fa37",
-    "gitCommitMessage": "ci: relaunch Android APK after Expo asset fix",
+    "gitCommitHash": "9fddf352fc827c1d9818d041e8d47c18636e7a4c",
+    "gitCommitMessage": "ci: launch clean CELICOR APK build after compatibility fixes",
     "priority": "NORMAL",
-    "createdAt": "2026-08-19T21:08:56.109Z",
-    "updatedAt": "2026-08-19T21:08:56.109Z",
-    "expirationDate": "2026-09-02T21:08:56.145Z",
+    "createdAt": "2026-08-19T21:28:22.624Z",
+    "updatedAt": "2026-08-19T21:28:22.624Z",
+    "expirationDate": "2026-09-02T21:28:22.643Z",
     "isForIosSimulator": false
   }
 ]
