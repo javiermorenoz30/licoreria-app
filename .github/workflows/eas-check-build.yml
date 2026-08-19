@@ -61,12 +61,12 @@ jobs:
           fs.writeFileSync('/tmp/eas-log-url.txt', latest.logFiles[0]);
           NODE
           if [ -s /tmp/eas-log-url.txt ]; then
-            curl --fail --location --silent --show-error "$(cat /tmp/eas-log-url.txt)" -o builds/eas-latest-build.log || true
+            curl --compressed --fail --location --silent --show-error "$(cat /tmp/eas-log-url.txt)" -o builds/eas-latest-build.log || true
           fi
           echo '===== LATEST EAS BUILD SUMMARY ====='
           cat builds/latest-build-summary.json
           echo '===== LATEST EAS BUILD LOG ====='
-          if [ -f builds/eas-latest-build.log ]; then cat builds/eas-latest-build.log; else echo 'No EAS log file downloaded'; fi
+          if [ -f builds/eas-latest-build.log ]; then file builds/eas-latest-build.log || true; cat builds/eas-latest-build.log; else echo 'No EAS log file downloaded'; fi
 
       - name: Persist status and diagnostic log
         if: github.event_name == 'push'
