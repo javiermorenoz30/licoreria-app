@@ -55,8 +55,7 @@ jobs:
             error: latest.error || null,
             appIdentifier: latest.appIdentifier,
             createdAt: latest.createdAt,
-            completedAt: latest.completedAt,
-            logUrl: latest.logFiles?.[0] || null
+            completedAt: latest.completedAt
           }, null, 2));
           if (!latest.logFiles?.[0]) process.exit(0);
           fs.writeFileSync('/tmp/eas-log-url.txt', latest.logFiles[0]);
@@ -64,6 +63,10 @@ jobs:
           if [ -s /tmp/eas-log-url.txt ]; then
             curl --fail --location --silent --show-error "$(cat /tmp/eas-log-url.txt)" -o builds/eas-latest-build.log || true
           fi
+          echo '===== LATEST EAS BUILD SUMMARY ====='
+          cat builds/latest-build-summary.json
+          echo '===== LATEST EAS BUILD LOG ====='
+          if [ -f builds/eas-latest-build.log ]; then cat builds/eas-latest-build.log; else echo 'No EAS log file downloaded'; fi
 
       - name: Persist status and diagnostic log
         if: github.event_name == 'push'
