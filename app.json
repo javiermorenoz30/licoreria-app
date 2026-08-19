@@ -2,6 +2,7 @@
   "expo": {
     "name": "CELICOR La Castellana",
     "slug": "celicor-la-castellana",
+    "owner": "jamz979712",
     "scheme": "celicor",
     "version": "0.1.0",
     "orientation": "portrait",
@@ -15,10 +16,12 @@
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.celicorlacastellana.app"
+      "bundleIdentifier": "com.celicorlacastellana.app",
+      "buildNumber": "1"
     },
     "android": {
       "package": "com.celicorlacastellana.app",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/celicor-logo.png",
         "backgroundColor": "#FFFFFF"
