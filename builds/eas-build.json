@@ -1,6 +1,6 @@
 [
   {
-    "id": "31f40b79-d8f9-47f7-b175-8b9ac4992303",
+    "id": "393ce2d3-391c-4deb-91e0-f46ed9f4f1af",
     "status": "NEW",
     "platform": "ANDROID",
     "artifacts": {},
@@ -28,12 +28,12 @@
     "sdkVersion": "54.0.0",
     "appVersion": "0.1.0",
     "appBuildVersion": "1",
-    "gitCommitHash": "a027877ce8066ca9a3316e02db529feaaeef8cdd",
-    "gitCommitMessage": "ci: trigger automated Android preview build",
+    "gitCommitHash": "0e34e6bb2b3360bcd36d1af0ad16fafee21e2cbb",
+    "gitCommitMessage": "ci: trigger Android preview after dependency fix",
     "priority": "NORMAL",
-    "createdAt": "2026-08-19T20:00:15.851Z",
-    "updatedAt": "2026-08-19T20:00:15.851Z",
-    "expirationDate": "2026-09-02T20:00:15.880Z",
+    "createdAt": "2026-08-19T20:23:24.387Z",
+    "updatedAt": "2026-08-19T20:23:24.387Z",
+    "expirationDate": "2026-09-02T20:23:24.408Z",
     "isForIosSimulator": false
   }
 ]
