@@ -16,6 +16,13 @@ jobs:
       - name: Read fresh APK build
         shell: bash
         run: |
-          eas build:view b72fc323-583b-4f9c-bbac-60fe60234e44 --json > /tmp/build.json
-          echo '===== CELICOR EAS BUILD ====='
-          cat /tmp/build.json
+          eas build:list --platform android --limit 10 --json --non-interactive > /tmp/builds.json
+          node <<'NODE'
+          const fs=require('fs');
+          const builds=JSON.parse(fs.readFileSync('/tmp/builds.json','utf8'));
+          const id='b72fc323-583b-4f9c-bbac-60fe60234e44';
+          const build=builds.find(b=>b.id===id);
+          if(!build){ console.error('Target build not found'); process.exit(2); }
+          console.log('===== CELICOR EAS BUILD =====');
+          console.log(JSON.stringify({id:build.id,status:build.status,artifacts:build.artifacts,error:build.error||null,createdAt:build.createdAt,completedAt:build.completedAt||null},null,2));
+          NODE
