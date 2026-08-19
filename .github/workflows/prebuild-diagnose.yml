@@ -5,6 +5,10 @@ on:
     branches: [main]
     paths:
       - '.github/prebuild-diagnose-trigger'
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/prebuild-diagnose-trigger'
   workflow_dispatch:
 
 permissions:
@@ -45,6 +49,7 @@ jobs:
           exit 0
 
       - name: Persist diagnostics
+        if: github.event_name == 'push'
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
