@@ -2,6 +2,10 @@ name: Build Android Preview APK
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/build-apk-trigger'
 
 permissions:
   contents: read
@@ -63,5 +67,5 @@ jobs:
           }
           JSON
 
-      - name: Trigger Android APK build
-        run: eas build --platform android --profile preview --non-interactive --no-wait
+      - name: Build Android APK
+        run: eas build --platform android --profile preview --non-interactive --wait
