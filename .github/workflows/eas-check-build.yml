@@ -1,0 +1,45 @@
+name: Check EAS Android Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/check-build-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Setup Expo and EAS
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Read latest Android builds
+        shell: bash
+        run: |
+          mkdir -p builds
+          eas build:list --platform android --limit 5 --json --non-interactive > builds/eas-builds-current.json
+
+      - name: Persist status
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add builds/eas-builds-current.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'ci: refresh EAS Android build status'
+          git push
