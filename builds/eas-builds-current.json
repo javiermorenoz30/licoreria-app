@@ -1,5 +1,289 @@
 [
   {
+    "id": "f27a60f8-07d9-4adc-87f0-ed9e96a823a3",
+    "status": "IN_PROGRESS",
+    "platform": "ANDROID",
+    "artifacts": {},
+    "fingerprint": {
+      "id": "01a01c08-a2ba-7b9a-b445-c1f049cfcdc5",
+      "hash": "2cb1b9cf2ba16408fdac200b42f5f51dbc6f04c5"
+    },
+    "initiatingActor": {
+      "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
+      "displayName": "jamz979712"
+    },
+    "logFiles": [
+      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/f27a60f8-07d9-4adc-87f0-ed9e96a823a3/2026-08-19T21%3A58%3A47Z-be53f48d-a6a5-44ed-9285-78247980982a.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T215922Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=56810b1dc241a9e5c35806903f882d754931b2b805478221a53ec4108394827ab01ed7aacff5ab3e8a1d00f2b693d59f98fa62376d6eca04b73dc68ec7bba0fdcc19d541ab76e73ea35ee3df9bd203e792ed703949e33bce66edbfedc218fc55d006b66948b45465f542a3f14797737b0316f61befe2a6c158236a2eef1f222091137f2af1f1a041e9f67e6516a52b375e744a25dba9ff719a84c7b2d37a5bdef8b0dcda453a145ae71015679172e4a64264d997096aee57ea8b2a9412a8e675d6cccc41263461133217896aa22ee3028ce0a10284c36b458d9b9f62cbaf334877df1755f717ff24ebc333d6fd8ed1aa4adb5d00234a04ba822651cc3b928da3"
+    ],
+    "app": {
+      "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
+      "name": "celicor-la-castellana",
+      "slug": "celicor-la-castellana",
+      "ownerAccount": {
+        "id": "036c1f78-6686-450a-9304-67aac4ab2244",
+        "name": "jamz979712"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "appIdentifier": "com.celicorlacastellana.app",
+    "sdkVersion": "54.0.0",
+    "appVersion": "0.1.0",
+    "appBuildVersion": "1",
+    "gitCommitHash": "a7fe167448a8d0bfaa74e70d7b1c332aaa59fe8e",
+    "gitCommitMessage": "ci: build Android with corrupt PNGs removed",
+    "priority": "NORMAL",
+    "createdAt": "2026-08-19T21:58:43.098Z",
+    "updatedAt": "2026-08-19T21:58:52.356Z",
+    "expirationDate": "2026-09-02T21:58:43.122Z",
+    "isForIosSimulator": false
+  },
+  {
+    "id": "cdca244f-49d7-489c-b4c1-cdcce3ccc84b",
+    "status": "ERRORED",
+    "platform": "ANDROID",
+    "error": {
+      "errorCode": "UNKNOWN_ERROR",
+      "message": "Unknown error. See logs of the Prebuild build phase for more information."
+    },
+    "artifacts": {},
+    "fingerprint": {
+      "id": "01a01bf2-3218-7182-b4c0-afa9d0ef4872",
+      "hash": "cb5674a22814329bf564844d39edf11dcdd06f20"
+    },
+    "initiatingActor": {
+      "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
+      "displayName": "jamz979712"
+    },
+    "logFiles": [
+      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/cdca244f-49d7-489c-b4c1-cdcce3ccc84b/2026-08-19T21%3A37%3A28Z-4261df1f-320f-4e78-81e4-c9e629665e96.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T215923Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=94fb725ac2d43e0681794048d2a79c3ac8f9c27b73c0b7a34bd70ff8d1dc32cc4a695e53e2dcb18703df2122abf818f1fa048aae174de9023248ffb7b8f902dc6ec306b6f73a41a930d188e5334161fe99c3026b8aeb45d7f602145c5ea90140d5bd61c6ccaee408b8856335d2ffb6c293e44f6b51efd288b1756c926f54ab6f15c9621962583690a49c07e88bdab69bf6ab5362c39b2fb27077e0b52ae6117c7188c0c2445482f020805a924e771165b6009ed9af2b76e1355e7690bf52a886ed35dddee6cdcd14b9dbda01ccf78b1c4aaef4e827b110ee23b8b85124c59e405be69738be7d632bd8ea12691f7189ed3c3ef1a294f9739e1be44889f6b77e05"
+    ],
+    "app": {
+      "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
+      "name": "celicor-la-castellana",
+      "slug": "celicor-la-castellana",
+      "ownerAccount": {
+        "id": "036c1f78-6686-450a-9304-67aac4ab2244",
+        "name": "jamz979712"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "appIdentifier": "com.celicorlacastellana.app",
+    "sdkVersion": "54.0.0",
+    "appVersion": "0.1.0",
+    "appBuildVersion": "1",
+    "gitCommitHash": "57b2df4f5cbb6dc2d0cc2d6b899a52cd676fc78e",
+    "gitCommitMessage": "Merge 6620b7240ec46747caa99abb8425760d1b34f999 into d008bc588dcfc10691208b6f37cb864baebcf1be",
+    "priority": "NORMAL",
+    "createdAt": "2026-08-19T21:37:25.565Z",
+    "updatedAt": "2026-08-19T21:37:55.916Z",
+    "completedAt": "2026-08-19T21:37:55.733Z",
+    "expirationDate": "2026-09-02T21:37:25.589Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 1667,
+      "buildQueueTime": 5215,
+      "buildDuration": 23286
+    }
+  },
+  {
+    "id": "1b44dedd-d45e-4c20-812c-f0828bcb12cc",
+    "status": "ERRORED",
+    "platform": "ANDROID",
+    "error": {
+      "errorCode": "UNKNOWN_ERROR",
+      "message": "Unknown error. See logs of the Prebuild build phase for more information."
+    },
+    "artifacts": {},
+    "fingerprint": {
+      "id": "01a01bf2-3218-7182-b4c0-afa9d0ef4872",
+      "hash": "cb5674a22814329bf564844d39edf11dcdd06f20"
+    },
+    "initiatingActor": {
+      "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
+      "displayName": "jamz979712"
+    },
+    "logFiles": [
+      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/1b44dedd-d45e-4c20-812c-f0828bcb12cc/2026-08-19T21%3A34%3A17Z-d6b9bebf-b87d-4e48-9178-7bd12d78ec08.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T215922Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=6d8235797038c9e3d6dfb575052c335f9db9e616df4bdcf72f4c115108964f62cc814137e4227f7aeddd4d149c0ea5dc308c9b53a973481e0a537a8b4d27c9067eebaf378ecd65f1fb888bb20467622ea75151075f581f0535a375e099f17bbcc278d477d4c0df3978a948acf447445b689e259c622335772a2acb3f36c371c81cd24ee0c7d81f747553aaf18d0829fa9dc4b827feb6764ababdc0f89c51c89df284b390a6d25f017fa99a9bb66ffab334a73394fab4dce7dabd3fe4c1c9aa87211c7e3797b6685eef5c1f8862576ddcf7e089d12c0722aaf0e78de969e4e6cc953f1a34382b729efd7052c173c833bdccafc2ef7842250aaccdf05366c8285d"
+    ],
+    "app": {
+      "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
+      "name": "celicor-la-castellana",
+      "slug": "celicor-la-castellana",
+      "ownerAccount": {
+        "id": "036c1f78-6686-450a-9304-67aac4ab2244",
+        "name": "jamz979712"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "appIdentifier": "com.celicorlacastellana.app",
+    "sdkVersion": "54.0.0",
+    "appVersion": "0.1.0",
+    "appBuildVersion": "1",
+    "gitCommitHash": "7edae62ea27e04d15d5ec833c7f89353b59f55e1",
+    "gitCommitMessage": "ci: rebuild Android after Expo SDK 54 alignment",
+    "priority": "NORMAL",
+    "createdAt": "2026-08-19T21:34:12.469Z",
+    "updatedAt": "2026-08-19T21:34:44.862Z",
+    "completedAt": "2026-08-19T21:34:44.663Z",
+    "expirationDate": "2026-09-02T21:34:12.494Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 4602,
+      "buildQueueTime": 5289,
+      "buildDuration": 22303
+    }
+  },
+  {
+    "id": "68424e44-eeee-4620-b5eb-7a677b7f074a",
+    "status": "ERRORED",
+    "platform": "ANDROID",
+    "error": {
+      "errorCode": "UNKNOWN_ERROR",
+      "message": "Unknown error. See logs of the Prebuild build phase for more information."
+    },
+    "artifacts": {},
+    "fingerprint": {
+      "id": "01a01b9b-3df8-71b6-8281-b4da9c9506ab",
+      "hash": "031988dbf5ef83fe78354297de37aa912653dff1"
+    },
+    "initiatingActor": {
+      "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
+      "displayName": "jamz979712"
+    },
+    "logFiles": [
+      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/68424e44-eeee-4620-b5eb-7a677b7f074a/2026-08-19T21%3A29%3A12Z-4c960b7a-4a4e-4391-b286-7540ae8216a9.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T215922Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=3ed7d6e66b9bea8e4081e3e26d493b4a7309ecc73df725c48bbd743c4421fa6a1d370a71ae85679bb15ebc9925860cca6bb7a70bade516a6384023a29b44e6fa084335aa971531e69c1e62d5873867eb6c355030faff1b6b4f05f09ef9023788fe11cc01129f59034812350431eb796a7f72ae4b9a4287a1ac887f3a8e9a39e2c6654b1e1fe14a98b0b4717bac92042cc2ccda1d79bc4fa3300fa35e83f5d21e0be8f041e2d52d343591fc9f522a8c9618015a95487133933e0d9c172c79c3e86171bb6b9756d6aabef58182c1adbdf411ad5057347b664b207e2b785056dd446fc072453e9195fb74cabd021e765dbab2d1a3edb82f0d4f679079e4adce7225"
+    ],
+    "app": {
+      "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
+      "name": "celicor-la-castellana",
+      "slug": "celicor-la-castellana",
+      "ownerAccount": {
+        "id": "036c1f78-6686-450a-9304-67aac4ab2244",
+        "name": "jamz979712"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "appIdentifier": "com.celicorlacastellana.app",
+    "sdkVersion": "54.0.0",
+    "appVersion": "0.1.0",
+    "appBuildVersion": "1",
+    "gitCommitHash": "d2979770b720b7a06bf074285832c6da128d5cc0",
+    "gitCommitMessage": "ci: launch CELICOR Android APK build",
+    "priority": "NORMAL",
+    "createdAt": "2026-08-19T21:29:11.910Z",
+    "updatedAt": "2026-08-19T21:29:40.132Z",
+    "completedAt": "2026-08-19T21:29:39.934Z",
+    "expirationDate": "2026-09-02T21:29:11.930Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 202,
+      "buildQueueTime": 5149,
+      "buildDuration": 22673
+    }
+  },
+  {
+    "id": "dc55a418-04ea-4103-a0fb-189d994a70a9",
+    "status": "ERRORED",
+    "platform": "ANDROID",
+    "error": {
+      "errorCode": "UNKNOWN_ERROR",
+      "message": "Unknown error. See logs of the Prebuild build phase for more information."
+    },
+    "artifacts": {},
+    "fingerprint": {
+      "id": "01a01beb-2dc9-7198-aa3b-91ff1091a02f",
+      "hash": "67f34971f072ca9b4464ae5e4be6261d7d4eba19"
+    },
+    "initiatingActor": {
+      "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
+      "displayName": "jamz979712"
+    },
+    "logFiles": [
+      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/dc55a418-04ea-4103-a0fb-189d994a70a9/2026-08-19T21%3A28%3A27Z-57ebb03e-e3ef-4df3-b51f-57f6f967a6b9.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T215922Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=98ced3487b4cc7697c9623c74b3cf3b5dba7b978e8f002e0fc3912374c23beeb1a54ff0b2e5fbca86a5d128f54e681240433ac68d8cb3bb6ef9986bb285a2a6be57b1954dd588e10a5ae76314efa5a98c6da3d8e581ed2f0ec6982624d14314214a6db6b9b5c083157ebb6489c811a626c18bafadcb7914c2f7daed9f8be9c0e39118b3e9fed1d4284720791b9524e8f96dad30959193467bc3efc2c35f6cb66c049c07d9d0fc64c62eca34f277981fa6eba81a82b218b6f75a735890700e9749053d54cf521788b2949b535e87139aef9a453245bd1227e51a3f839e9b7e4de9a8b1dfeac401422c66c6411c29d95f9c8d9be9a640c00157bb459bc9b74b0db"
+    ],
+    "app": {
+      "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
+      "name": "celicor-la-castellana",
+      "slug": "celicor-la-castellana",
+      "ownerAccount": {
+        "id": "036c1f78-6686-450a-9304-67aac4ab2244",
+        "name": "jamz979712"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "appIdentifier": "com.celicorlacastellana.app",
+    "sdkVersion": "54.0.0",
+    "appVersion": "0.1.0",
+    "appBuildVersion": "1",
+    "gitCommitHash": "9fddf352fc827c1d9818d041e8d47c18636e7a4c",
+    "gitCommitMessage": "ci: launch clean CELICOR APK build after compatibility fixes",
+    "priority": "NORMAL",
+    "createdAt": "2026-08-19T21:28:22.624Z",
+    "updatedAt": "2026-08-19T21:28:55.644Z",
+    "completedAt": "2026-08-19T21:28:55.443Z",
+    "expirationDate": "2026-09-02T21:28:22.643Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 4579,
+      "buildQueueTime": 4997,
+      "buildDuration": 23243
+    }
+  },
+  {
+    "id": "92013cc0-9880-4c88-9fa4-0c9f793c9401",
+    "status": "ERRORED",
+    "platform": "ANDROID",
+    "error": {
+      "errorCode": "UNKNOWN_ERROR",
+      "message": "Unknown error. See logs of the Prebuild build phase for more information."
+    },
+    "artifacts": {},
+    "fingerprint": {
+      "id": "01a01beb-2dc9-7198-aa3b-91ff1091a02f",
+      "hash": "67f34971f072ca9b4464ae5e4be6261d7d4eba19"
+    },
+    "initiatingActor": {
+      "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
+      "displayName": "jamz979712"
+    },
+    "logFiles": [
+      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/92013cc0-9880-4c88-9fa4-0c9f793c9401/2026-08-19T21%3A26%3A39Z-72c9323b-fe70-4d24-8827-d710079edef8.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T215923Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=02efaff3acf079db9cc1a717295e0a81855aedf6bb8286100522b73d23b85e6e98ebcf9a30bb76bd6a3eeb0413d82ce5de011a987a12f1f99b3679de8f6e53f70db0f7b8fb8502ad281d9433561634b1ec24b849ab30dabf10de1d9f6f245a0a05c000850beca56b6ed137bdf4045135d0c79ca7d21ef71166ee152d5e1c2a6edc39fbbf315b6daeffb801d082e6a2a8d7195a95880e38435c85179b9873e3791af3f6b87425e0b12c39b4a0fcc396b7b8d40bdc68625276555391f7bb321db3844d83d60c12084e3f07b1f53f0e56da584ec5dd56ac012477ab0634245c792cb28f574c80f050e76cd7f77d34d872ef8972ec3f689929e1028fd2d87795cb9b"
+    ],
+    "app": {
+      "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
+      "name": "celicor-la-castellana",
+      "slug": "celicor-la-castellana",
+      "ownerAccount": {
+        "id": "036c1f78-6686-450a-9304-67aac4ab2244",
+        "name": "jamz979712"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "appIdentifier": "com.celicorlacastellana.app",
+    "sdkVersion": "54.0.0",
+    "appVersion": "0.1.0",
+    "appBuildVersion": "1",
+    "gitCommitHash": "6f0c2c26e2f8df254fadbde14cb6339b489653d2",
+    "gitCommitMessage": "ci: launch CELICOR APK after asset repair",
+    "priority": "NORMAL",
+    "createdAt": "2026-08-19T21:26:32.614Z",
+    "updatedAt": "2026-08-19T21:27:06.062Z",
+    "completedAt": "2026-08-19T21:27:05.865Z",
+    "expirationDate": "2026-09-02T21:26:32.641Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 4502,
+      "buildQueueTime": 6535,
+      "buildDuration": 22214
+    }
+  },
+  {
     "id": "7a342e43-3860-4a46-9b3f-962e3ea0c24a",
     "status": "ERRORED",
     "platform": "ANDROID",
@@ -17,7 +301,7 @@
       "displayName": "jamz979712"
     },
     "logFiles": [
-      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/7a342e43-3860-4a46-9b3f-962e3ea0c24a/2026-08-19T21%3A15%3A32Z-f7966fe6-13e3-4e85-bd5e-d515d8d12e68.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T211602Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=5583698ea68cc70126ac1445e8c3896bc5e7884e2f56735442512fbc4fd930f60dde16d6520a779dd300fcbdb8af52309684ce53e8e27281d30ddac257235b404ea01adcc4d8749dac7003f4d32a2faa94e3c809a04499007c0d183f30eb17d8f4b3f75e0e198245d676ee6d43b899eb3ab7813169e6e46707019fe910dacafe4fd4183dfea7db064e309390716f0275a227e0e138c7d19fbcc06ecdf2fccf59885b1b7feb01ae297aec64be0b9c3bf5b8f6b30b2847fd9e4b28e2edf0a6b8e831fee6dd7b4d06d472b5d905a74c616a606416ad97a6d3925f5f87bee7dc379aa575eac67dc5035c6c6c191fb5d0a7ead9f8ada1d303841b6224be329af99b96"
+      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/7a342e43-3860-4a46-9b3f-962e3ea0c24a/2026-08-19T21%3A15%3A32Z-f7966fe6-13e3-4e85-bd5e-d515d8d12e68.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T215922Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=1347e83a301ebd2b28b59f596a529d50f5709d593adf84d30d29a0ae1af5df4440293b64f9a40bed4bc331e86267885d186c718c6cbbc8b0ea4619f83fc7841f254ab92b6182f0dac25ee1b010e47be73625e32304df65729d202ec2d03664b56f5eccd510c09a07059dbe96deda3869068b3b3105b75b2c5df8ba9ebadeeaea0bec6eb22723dcee2e70426ab7e8a90175358ba5e44958c3a9bbb9bf46373b1a6f0696da96c2de313d7bf9adeffd1a40f2bbf98c1cfc1a207596a6a341165b01d88096cf24a8ddca8fb0b4ffee8428dddc20f157bc51ea718464193523c81786c162b0a6e6fd78c91a8fe466338c0499c58d46ee5e6a57dcc70330081a21f421"
     ],
     "app": {
       "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
@@ -66,7 +350,7 @@
       "displayName": "jamz979712"
     },
     "logFiles": [
-      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/fa089e07-08f9-4d6d-a8f0-a77e92a61c12/2026-08-19T21%3A10%3A03Z-521ebce6-fe19-42d9-8a36-4d33e56c4fbb.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T211759Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=20fb6a4d7e0cf043af64377168b33a55ce31ad2e71282b542dcf1612ae18e69960476e55aacd78bbce4e08fba2134884afb0639588fe8500025a9754936deaeae5355f9fda2f82e6d10595f8536ab900830377400d777dfc22329c489686265a53dadd61507074fe133a8fb7b0bdfb2f1d8881465f2853cf20385a79e97a85ca18fcc0e2234c77cddcb679bc655125b373efbfc54fc6772e0674ae6d79e7ba45636e14865a6a4f470b8e07d7314b164eaf23b5929e88c4bac65798f46b6496ce518fff207d3d105357ec5c2857cd09a9a84cb800b616d12450828ba5f1a04b108465bc8f7adda547d7f71ef62a3fe0e0342729a841478e194900e5f45116229e"
+      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/fa089e07-08f9-4d6d-a8f0-a77e92a61c12/2026-08-19T21%3A10%3A03Z-521ebce6-fe19-42d9-8a36-4d33e56c4fbb.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T215922Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=6d68817d0dac9a6ab1711ab96dee150f5cef4ea42e12d4e69edbfcd08b25053e556f46307da2c3c960b8816c2aacc2083791dc28949fd814e0c16a2d4803aa7dc4fde0767231acbde3d91e01a88a14b9801bce097c4f42732f83b871670674df0a068efcaca96776d62c940264d786a3f098cdbc3be454d3f81a4e249ae4e92247019fc84ac6ca0e17c598c8eab05eb9514220ac931def36cb583d0ed328b85f6183c0dc7a359d524aaf1bc08b9a091082018a6c17a7319f46087a06b15a661b1218246b8c5f9493aaf0bfed1ff7f487585f1a94d6b342d46dd8148e5ff1cd89a79b8ab00b45bf9afb1e40901307f506c0c2ea5304b46d85d6151e9735a64de2"
     ],
     "app": {
       "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
@@ -99,8 +383,12 @@
   },
   {
     "id": "89031641-88c3-4465-851d-078501a7f4ce",
-    "status": "IN_PROGRESS",
+    "status": "ERRORED",
     "platform": "ANDROID",
+    "error": {
+      "errorCode": "EAS_BUILD_UNKNOWN_GRADLE_ERROR",
+      "message": "Gradle build failed with unknown error. See logs for the \"Run gradlew\" phase for more information."
+    },
     "artifacts": {},
     "fingerprint": {
       "id": "01a01bdb-0ed9-7ee9-897a-193643a009eb",
@@ -111,7 +399,7 @@
       "displayName": "jamz979712"
     },
     "logFiles": [
-      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/89031641-88c3-4465-851d-078501a7f4ce/2026-08-19T21%3A09%3A06Z-3e3ae0d6-1d1d-4e20-97bb-746c33aaf3b4.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T211759Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=3586720b7fe9dcb36b13b632a0d4ca2a0400811d23a2155cb87228699fc3c43cafd77bb8740afffefb31c3cb125ab055a90b1c4b4783d27fdf2649db633138f13a19be4c31425557f56ee025a8be9d2f3dba94cbe0d03aa4fd3a2394fa0a06bd1b4bdf1d3f87424f18e3de592a42c7358b669451819e0df562354c984b42b617f3205c9917524740959752ebf1161877a5e7e6685f7a2f1028a199bf2b41dc27402210fd6c329cd5336ea94b010038d4a57485ba3f59001f4a1a38ef4446a6c0a17632f9b29fbf9e3d67e1197feae1211bb1400c27ae250edd847ce0eb580c40bd36df5f954767f633ec47d64ba33aa77e01e2440afa1940de9f5e80434ddeda"
+      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/89031641-88c3-4465-851d-078501a7f4ce/2026-08-19T21%3A09%3A06Z-3e3ae0d6-1d1d-4e20-97bb-746c33aaf3b4.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T215922Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=46a57775c6c2bc6cc7973bc2855cf144a97267e3ca8fba5ba6309a1316803ea20f135b6e50dcb715754d8eccd4a4447a880fd355665674138f7f472e384e9f5cd835857868bf7583dee98fd45f4ebe2a5e2e7fec97d7c2fb0dd622d9f6be3aecc9bcb730492902b44dc9d3d9617db3f68ed13a9722008d898bad2e43f2b9da7b37893ceb849442516dae2eec5787093040b73780f55ce51ddb824e163d0e640861d9a6cdaae58cc49520a13a7d5d91485e7714b7e25a70314198b9a4b93f677ef17868ce77600556ab3f3086a450862765da367de3d416519d28452e54a45fdc75335b0b8ff290bf103f9f810756045588a4cada237f1dda74be233f0f65c383"
     ],
     "app": {
       "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
@@ -132,9 +420,15 @@
     "gitCommitMessage": "ci: relaunch Android APK after Expo asset fix",
     "priority": "NORMAL",
     "createdAt": "2026-08-19T21:08:56.109Z",
-    "updatedAt": "2026-08-19T21:09:11.044Z",
+    "updatedAt": "2026-08-19T21:18:17.663Z",
+    "completedAt": "2026-08-19T21:18:17.479Z",
     "expirationDate": "2026-09-02T21:08:56.145Z",
-    "isForIosSimulator": false
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 1204,
+      "buildQueueTime": 13637,
+      "buildDuration": 546529
+    }
   },
   {
     "id": "b2e5f761-d8ad-484f-8e68-f3b8037228f3",
@@ -154,7 +448,7 @@
       "displayName": "jamz979712"
     },
     "logFiles": [
-      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/b2e5f761-d8ad-484f-8e68-f3b8037228f3/2026-08-19T20%3A59%3A54Z-bdeacfdd-6733-493d-8d96-48e54826b116.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T211759Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=837cb258b860288113cc32f753ec18a1a349684d05e42dc31937a11d124c6b6acbcaf89c4d9719463dfeb845f27cab7e76b6c725669ce9edfdc26b919a6d1e0412eec8bc8708dcd6fda3904693b8306a693ca010a3b31be56200ede60ad07e3bec33a1b9f6f12f589b97f85c5cce1e3aa5c84ac6c37a1470a4fc01ebd8a289e005599ebc92aa06bba31e7c6c6a603649621c4b0e4d39fb528b4ecc896770c2ccc3d1aeaada5c15abb4d83a44a82835b07b3fcfd7da4c5a43ba619264fff59eda9ccb6187344ca851d3986b5b4d4e42e7b7bc6274018908051e86b73958ea3abdd92d16d0e1583043b077d2dece1400c65ed86fe460975a6d2c86aa1baadf62d5"
+      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/b2e5f761-d8ad-484f-8e68-f3b8037228f3/2026-08-19T20%3A59%3A54Z-bdeacfdd-6733-493d-8d96-48e54826b116.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T215922Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=395156f8443f21c4aea613056240d63a027d40ce8ebd4b77f1c14a941540063a54ffba629fd20eb6df175cd5f5d5e459379f93e0637e01e3ee609497cf37c1ac125f7c11117300ebe300ff443d47f862b68c07ffb693e12cfacfbb8f6fb30bc0f93c6ddbfd51c7310b79e2829c9845783af8f10704a1c59a76e994ca764835174b71802b2ff514245c24f79d1948a6ba4338fac18f8c96109596f8fb0a96599176dc6b2276bcb467247137b6862ee0b9a7183ec4ba287d187799cdc8fd1e3f2856b8e0ed8ec92f8e724a4da819c36f6a180a9e414526bd0f52d53a6d52b0b3c1cc3ac4e89eb6dd0990741b30cd0ab33179dd985f5448b43c2a2187c4b4928daf"
     ],
     "app": {
       "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
@@ -183,300 +477,6 @@
       "buildWaitTime": 2176,
       "buildQueueTime": 82089,
       "buildDuration": 23826
-    }
-  },
-  {
-    "id": "b24f0f48-a3ce-4147-b75f-85a9e8263ded",
-    "status": "ERRORED",
-    "platform": "ANDROID",
-    "error": {
-      "errorCode": "UNKNOWN_ERROR",
-      "message": "Unknown error. See logs of the Prebuild build phase for more information."
-    },
-    "artifacts": {},
-    "fingerprint": {
-      "id": "01a01b9b-3df8-71b6-8281-b4da9c9506ab",
-      "hash": "031988dbf5ef83fe78354297de37aa912653dff1"
-    },
-    "initiatingActor": {
-      "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
-      "displayName": "jamz979712"
-    },
-    "logFiles": [
-      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/b24f0f48-a3ce-4147-b75f-85a9e8263ded/2026-08-19T20%3A31%3A16Z-de1cbd27-70aa-4174-87a0-14cf4f8fc7f1.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T211759Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=98a6ac42b0841fd9e8fc437e085990821ad88338aaf4d62e0eac9e1214bb5d609885af26089d842487b144d7303ec474b350a6c2770acd2b9357f87f5dae71c0879625b073c0ddeb5daac57668ee652965ad237ec9002c45df172a28e7f2da8c47948ac7f17675a0bc56186ba81f0ee440ef7fb2b2e27d58d2ea2c5bc9dbd9659ba3533e4f1b0d24db3a4e6c66c0ff27f0bf76fabb737a1de2c309b6b3e520129e944975d5eab0e2fa66cd9bf6149fc73fe2552c9c6e1e099492a4a47bf4dada73365f6f4c5c70fd9962b087efca5b015bc2d971c2cf1fa8509fdae82b9404a7cd5b4b657a66670cb3f04b556b290889311f3dc7292f675f9a657ccc2d03a7a6"
-    ],
-    "app": {
-      "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
-      "name": "celicor-la-castellana",
-      "slug": "celicor-la-castellana",
-      "ownerAccount": {
-        "id": "036c1f78-6686-450a-9304-67aac4ab2244",
-        "name": "jamz979712"
-      }
-    },
-    "distribution": "INTERNAL",
-    "buildProfile": "preview",
-    "appIdentifier": "com.celicorlacastellana.app",
-    "sdkVersion": "54.0.0",
-    "appVersion": "0.1.0",
-    "appBuildVersion": "1",
-    "gitCommitHash": "bef72c22e5622bc66a8e81880f391539fbff76d5",
-    "gitCommitMessage": "Merge e310a4d57c643dd5f1846a0a60fe1a18a26142a0 into 0e34e6bb2b3360bcd36d1af0ad16fafee21e2cbb",
-    "priority": "NORMAL",
-    "createdAt": "2026-08-19T20:24:00.973Z",
-    "updatedAt": "2026-08-19T20:31:44.105Z",
-    "completedAt": "2026-08-19T20:31:43.918Z",
-    "expirationDate": "2026-09-02T20:24:00.994Z",
-    "isForIosSimulator": false,
-    "metrics": {
-      "buildWaitTime": 1454,
-      "buildQueueTime": 438598,
-      "buildDuration": 22893
-    }
-  },
-  {
-    "id": "393ce2d3-391c-4deb-91e0-f46ed9f4f1af",
-    "status": "ERRORED",
-    "platform": "ANDROID",
-    "error": {
-      "errorCode": "UNKNOWN_ERROR",
-      "message": "Unknown error. See logs of the Prebuild build phase for more information."
-    },
-    "artifacts": {},
-    "fingerprint": {
-      "id": "01a01b9b-3df8-71b6-8281-b4da9c9506ab",
-      "hash": "031988dbf5ef83fe78354297de37aa912653dff1"
-    },
-    "initiatingActor": {
-      "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
-      "displayName": "jamz979712"
-    },
-    "logFiles": [
-      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/393ce2d3-391c-4deb-91e0-f46ed9f4f1af/2026-08-19T20%3A29%3A16Z-3a32e83e-b6a8-44ee-8a72-8ace0106063d.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T211759Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=263bba3ba6bd1e893515d44336c9b37f26dcf9d4554e239ab1ace6c4838c65f9421e41cc3ca9fc9fdad3eb7616b2afb7d1eadba7109789921d9f46b08f61ec852830712f72dee1b37cf04d57cae5c9df8c344aefcb9a1632ba2c4c3ff4fb90f942884c09246edae073abf1e0ca52f94db2b4b824a9e14e3c50643eb71effa962d033b2ea8b4c251b79cc7875d70e7a7eb3a193a85895ad3d43c62394d3d2ee72c95333cff0c50ca2882c83eafa0d0b1f350a0d5e3b5a68a189a86b6f59113f186a697329689953627f192d9f979e0dc85f27c9354e55ca63fd383390561718d4bcfcf806ff4224a3f79787e9e6d92a8a5f8586de01ecfffed7c72563a0bc6216"
-    ],
-    "app": {
-      "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
-      "name": "celicor-la-castellana",
-      "slug": "celicor-la-castellana",
-      "ownerAccount": {
-        "id": "036c1f78-6686-450a-9304-67aac4ab2244",
-        "name": "jamz979712"
-      }
-    },
-    "distribution": "INTERNAL",
-    "buildProfile": "preview",
-    "appIdentifier": "com.celicorlacastellana.app",
-    "sdkVersion": "54.0.0",
-    "appVersion": "0.1.0",
-    "appBuildVersion": "1",
-    "gitCommitHash": "0e34e6bb2b3360bcd36d1af0ad16fafee21e2cbb",
-    "gitCommitMessage": "ci: trigger Android preview after dependency fix",
-    "priority": "NORMAL",
-    "createdAt": "2026-08-19T20:23:24.387Z",
-    "updatedAt": "2026-08-19T20:29:45.084Z",
-    "completedAt": "2026-08-19T20:29:44.887Z",
-    "expirationDate": "2026-09-02T20:23:24.408Z",
-    "isForIosSimulator": false,
-    "metrics": {
-      "buildWaitTime": 3180,
-      "buildQueueTime": 353679,
-      "buildDuration": 23641
-    }
-  },
-  {
-    "id": "e5c8d014-4999-4950-8975-a466bd59ee57",
-    "status": "ERRORED",
-    "platform": "ANDROID",
-    "error": {
-      "errorCode": "UNKNOWN_ERROR",
-      "message": "Unknown error. See logs of the Install dependencies build phase for more information."
-    },
-    "artifacts": {},
-    "fingerprint": {
-      "id": "01a01b9b-3df8-71b6-8281-b4da9c9506ab",
-      "hash": "031988dbf5ef83fe78354297de37aa912653dff1"
-    },
-    "initiatingActor": {
-      "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
-      "displayName": "jamz979712"
-    },
-    "logFiles": [
-      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/e5c8d014-4999-4950-8975-a466bd59ee57/2026-08-19T20%3A10%3A24Z-3b5b43f3-cffe-42ad-9629-f17012eeea5f.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T211759Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=29bf4acdd7ce77855e27bf39e894c13bcdbbc465dec0195d7d210de299f293a2a15c28382f348a58aa1b26d735950649202f3a76c76028efbf6cfc2b660b719f247f330358d18f1070c51e42ba75a1a10863bcf5b3babafbb47ce29bfeaa76ad312b33efe85eb16c4d11a0045139fbee75b090894fc00db1eceb6541b9e520de813278a95c20204227ff8fd0451d054d610f1fcb6125714a92b033c1ea8d81cc3ce6a931d084e39f5ff48d6f01722f41ad1a9a4f7d52a419e3808ea865d3ec92918421db3b14e8e0736216fa6c0461ba07ba17fc9f752ce2bcfc237dc4761bc776280db89708a812d38b74182a6688c8505e1e29789a86159ebc2ecbe07f1548"
-    ],
-    "app": {
-      "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
-      "name": "celicor-la-castellana",
-      "slug": "celicor-la-castellana",
-      "ownerAccount": {
-        "id": "036c1f78-6686-450a-9304-67aac4ab2244",
-        "name": "jamz979712"
-      }
-    },
-    "distribution": "INTERNAL",
-    "buildProfile": "preview",
-    "appIdentifier": "com.celicorlacastellana.app",
-    "sdkVersion": "54.0.0",
-    "appVersion": "0.1.0",
-    "appBuildVersion": "1",
-    "gitCommitHash": "31842421df3d6d2a5197f9d8e59990219f4d4e9a",
-    "gitCommitMessage": "ci: trigger recorded Android preview build",
-    "priority": "NORMAL",
-    "createdAt": "2026-08-19T20:04:53.815Z",
-    "updatedAt": "2026-08-19T20:10:37.477Z",
-    "completedAt": "2026-08-19T20:10:37.264Z",
-    "expirationDate": "2026-09-02T20:04:53.839Z",
-    "isForIosSimulator": false,
-    "metrics": {
-      "buildWaitTime": 3478,
-      "buildQueueTime": 332267,
-      "buildDuration": 7704
-    }
-  },
-  {
-    "id": "ad1a5d48-3205-4c94-8de2-9adda87a17c1",
-    "status": "ERRORED",
-    "platform": "ANDROID",
-    "error": {
-      "errorCode": "UNKNOWN_ERROR",
-      "message": "Unknown error. See logs of the Install dependencies build phase for more information."
-    },
-    "artifacts": {},
-    "fingerprint": {
-      "id": "01a01b9b-3df8-71b6-8281-b4da9c9506ab",
-      "hash": "031988dbf5ef83fe78354297de37aa912653dff1"
-    },
-    "initiatingActor": {
-      "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
-      "displayName": "jamz979712"
-    },
-    "logFiles": [
-      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/ad1a5d48-3205-4c94-8de2-9adda87a17c1/2026-08-19T20%3A07%3A04Z-c32098ef-0e5e-449d-99c0-307d722a8f27.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T211759Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=4a8d499906a2fca4b36825b8ff0bbe08039f66e3c7c6e42da088cf170346f98771c5b10ba12afa0b729af6d2ca96ea9179ce60d377eaa802a66dfbe846c491692929f99d31462cb52eaa49f94eab5c9b1f03ca97eecc5c53ec4057811d2e3f4c53661bc5c526bfcdbb849b3d9cc34a11f473dae8044652a2fb226c32ef98ea93cde062fd2dac2fccdd717193973c7999fd55d2116532475cc47d7b4cd91bc243d608c656a810c0e5a1c4f2fb7d91636d084c6ca8412545f3e71c10a2e70f0b4c30fd783b0e3d66f0575f6c61f9bbeda2f7521d923eb8399bc27c3889f80f1a4922ff27e565b7a69ae1798728742e3aacc5a8f6a34f2280008ce00a2c5bfbb0a6"
-    ],
-    "app": {
-      "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
-      "name": "celicor-la-castellana",
-      "slug": "celicor-la-castellana",
-      "ownerAccount": {
-        "id": "036c1f78-6686-450a-9304-67aac4ab2244",
-        "name": "jamz979712"
-      }
-    },
-    "distribution": "INTERNAL",
-    "buildProfile": "preview",
-    "appIdentifier": "com.celicorlacastellana.app",
-    "sdkVersion": "54.0.0",
-    "appVersion": "0.1.0",
-    "appBuildVersion": "1",
-    "gitCommitHash": "e09ca636146302a127acd12f7ac3a24456206ddb",
-    "gitCommitMessage": "Merge f5745977fb68db4970c64c59e4169642dc3c0198 into 046b6da8eebf96090dfdf00a62986609a63c9274",
-    "priority": "NORMAL",
-    "createdAt": "2026-08-19T20:02:13.829Z",
-    "updatedAt": "2026-08-19T20:07:17.520Z",
-    "completedAt": "2026-08-19T20:07:17.215Z",
-    "expirationDate": "2026-09-02T20:02:13.853Z",
-    "isForIosSimulator": false,
-    "metrics": {
-      "buildWaitTime": 3334,
-      "buildQueueTime": 291648,
-      "buildDuration": 8404
-    }
-  },
-  {
-    "id": "31f40b79-d8f9-47f7-b175-8b9ac4992303",
-    "status": "ERRORED",
-    "platform": "ANDROID",
-    "error": {
-      "errorCode": "UNKNOWN_ERROR",
-      "message": "Unknown error. See logs of the Install dependencies build phase for more information."
-    },
-    "artifacts": {},
-    "fingerprint": {
-      "id": "01a01b9b-3df8-71b6-8281-b4da9c9506ab",
-      "hash": "031988dbf5ef83fe78354297de37aa912653dff1"
-    },
-    "initiatingActor": {
-      "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
-      "displayName": "jamz979712"
-    },
-    "logFiles": [
-      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/31f40b79-d8f9-47f7-b175-8b9ac4992303/2026-08-19T20%3A05%3A16Z-cab4958a-1239-4a7f-b56f-5dc194a8960e.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T211759Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=2f709cd13c598e9279ed88b1645ff0ede1b4a01ca4324b032a36fa195d72c32ab002fee06569c56a5567b13d7b658cd96dfca77c916c0403779772bbaf87228d1b7e94a80ca49a203866bca708d8672a41fbd4e72cf92e7518e704f75fafce14127912b21fc42a71506062981c0384ea07f3a63beb716118d306a11a36675b6e2c5b0b6b50e9c101b98adb2147a95cec2665586e17a831a84792eae4fd08fcf2938afcbb3df87187c07ba52e27ebd478665aaa1dac9729806e50658d95d98f40b87371331076d1478036230263bf10a00de0b4fd6aeecbe73e016c04661fbb7e95df34d73445389521200067ab724d4d9df5b5e0aed94b45ae48d7b9f850a4d6"
-    ],
-    "app": {
-      "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
-      "name": "celicor-la-castellana",
-      "slug": "celicor-la-castellana",
-      "ownerAccount": {
-        "id": "036c1f78-6686-450a-9304-67aac4ab2244",
-        "name": "jamz979712"
-      }
-    },
-    "distribution": "INTERNAL",
-    "buildProfile": "preview",
-    "appIdentifier": "com.celicorlacastellana.app",
-    "sdkVersion": "54.0.0",
-    "appVersion": "0.1.0",
-    "appBuildVersion": "1",
-    "gitCommitHash": "a027877ce8066ca9a3316e02db529feaaeef8cdd",
-    "gitCommitMessage": "ci: trigger automated Android preview build",
-    "priority": "NORMAL",
-    "createdAt": "2026-08-19T20:00:15.851Z",
-    "updatedAt": "2026-08-19T20:05:28.635Z",
-    "completedAt": "2026-08-19T20:05:28.434Z",
-    "expirationDate": "2026-09-02T20:00:15.880Z",
-    "isForIosSimulator": false,
-    "metrics": {
-      "buildWaitTime": 1531,
-      "buildQueueTime": 303463,
-      "buildDuration": 7589
-    }
-  },
-  {
-    "id": "c148ad51-201e-4ca8-8115-879bfb177a6a",
-    "status": "ERRORED",
-    "platform": "ANDROID",
-    "error": {
-      "errorCode": "UNKNOWN_ERROR",
-      "message": "Unknown error. See logs of the Install dependencies build phase for more information."
-    },
-    "artifacts": {},
-    "fingerprint": {
-      "id": "01a01b9b-3df8-71b6-8281-b4da9c9506ab",
-      "hash": "031988dbf5ef83fe78354297de37aa912653dff1"
-    },
-    "initiatingActor": {
-      "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
-      "displayName": "jamz979712"
-    },
-    "logFiles": [
-      "https://storage.googleapis.com/eas-workflows-production/logs/66a7679c-6d67-4188-94c8-6e8f3228f75c/c148ad51-201e-4ca8-8115-879bfb177a6a/2026-08-19T20%3A04%3A13Z-d73a1b80-a0ff-4b94-94bd-fc48dbed12a7.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260819%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260819T211759Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=118aee60de311e4cb18cf79133319c24ca99974c63ddb88081ea90ad11aca80d601bc4ca90401e206e3be0657eb17c7a29452d7e43eef0706e429fb41d77cef615c4ba700e1cf18e740a36f25855491de0e867f6e2e14829a63d2a13a639033846cf8c4d409fce5429df61311bc459985171beb52c98b54f2119165f76f66e8b7ef75e36572d34443790f99e86f8ab2aba37d1f3288411fd84381be4a95afd7ce2863169cc73e60ec64d51ca72561a2669f61effbab9ead7a8726bd22042d7d6aecb3a43625735fdeb3a392e8441ddaf255bbd2b05e22ea5caefca1fc9da814e0fc93c8f38ca19171cc220e34193278f262a160127b62c166c7a3933ff22a0e6"
-    ],
-    "app": {
-      "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
-      "name": "celicor-la-castellana",
-      "slug": "celicor-la-castellana",
-      "ownerAccount": {
-        "id": "036c1f78-6686-450a-9304-67aac4ab2244",
-        "name": "jamz979712"
-      }
-    },
-    "distribution": "INTERNAL",
-    "buildProfile": "preview",
-    "appIdentifier": "com.celicorlacastellana.app",
-    "sdkVersion": "54.0.0",
-    "appVersion": "0.1.0",
-    "appBuildVersion": "1",
-    "gitCommitHash": "83668d1d4bd451c29d2cb3b16c8697f78913ccac",
-    "gitCommitMessage": "ci: trigger first CELICOR Android preview build",
-    "priority": "NORMAL",
-    "createdAt": "2026-08-19T19:59:13.875Z",
-    "updatedAt": "2026-08-19T20:04:25.813Z",
-    "completedAt": "2026-08-19T20:04:25.601Z",
-    "expirationDate": "2026-09-02T19:59:13.900Z",
-    "isForIosSimulator": false,
-    "metrics": {
-      "buildWaitTime": 3375,
-      "buildQueueTime": 300696,
-      "buildDuration": 7655
     }
   }
 ]

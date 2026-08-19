@@ -1,11 +1,9 @@
 {
-  "id": "393ce2d3-391c-4deb-91e0-f46ed9f4f1af",
-  "status": "ERRORED",
-  "error": {
-    "errorCode": "UNKNOWN_ERROR",
-    "message": "Unknown error. See logs of the Prebuild build phase for more information."
-  },
+  "id": "f27a60f8-07d9-4adc-87f0-ed9e96a823a3",
+  "status": "IN_PROGRESS",
+  "error": null,
   "appIdentifier": "com.celicorlacastellana.app",
-  "createdAt": "2026-08-19T20:23:24.387Z",
-  "completedAt": "2026-08-19T20:29:44.887Z"
+  "createdAt": "2026-08-19T21:58:43.098Z",
+  "buildUrl": null,
+  "artifacts": {}
 }
