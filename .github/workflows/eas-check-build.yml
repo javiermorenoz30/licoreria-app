@@ -39,34 +39,33 @@ jobs:
         shell: bash
         run: |
           mkdir -p builds
-          eas build:list --platform android --limit 5 --json --non-interactive > builds/eas-builds-current.json
-          cat builds/eas-builds-current.json
+          eas build:list --platform android --limit 10 --json --non-interactive > builds/eas-builds-current.json
 
-      - name: Download latest EAS build log
+      - name: Download target EAS prebuild log
         shell: bash
         run: |
           node <<'NODE'
           const fs = require('fs');
           const builds = JSON.parse(fs.readFileSync('builds/eas-builds-current.json','utf8'));
-          const latest = builds[0] || {};
+          const targetId = '393ce2d3-391c-4deb-91e0-f46ed9f4f1af';
+          const target = builds.find(b => b.id === targetId) || builds.find(b => b.status === 'ERRORED') || builds[0] || {};
           fs.writeFileSync('builds/latest-build-summary.json', JSON.stringify({
-            id: latest.id,
-            status: latest.status,
-            error: latest.error || null,
-            appIdentifier: latest.appIdentifier,
-            createdAt: latest.createdAt,
-            completedAt: latest.completedAt
+            id: target.id,
+            status: target.status,
+            error: target.error || null,
+            appIdentifier: target.appIdentifier,
+            createdAt: target.createdAt,
+            completedAt: target.completedAt
           }, null, 2));
-          if (!latest.logFiles?.[0]) process.exit(0);
-          fs.writeFileSync('/tmp/eas-log-url.txt', latest.logFiles[0]);
+          if (target.logFiles?.[0]) fs.writeFileSync('/tmp/eas-log-url.txt', target.logFiles[0]);
           NODE
           if [ -s /tmp/eas-log-url.txt ]; then
-            curl --compressed --fail --location --silent --show-error "$(cat /tmp/eas-log-url.txt)" -o builds/eas-latest-build.log || true
+            curl --compressed --fail --location --silent --show-error "$(cat /tmp/eas-log-url.txt)" -o builds/eas-target-build.log
           fi
-          echo '===== LATEST EAS BUILD SUMMARY ====='
+          echo '===== TARGET EAS BUILD SUMMARY ====='
           cat builds/latest-build-summary.json
-          echo '===== LATEST EAS BUILD LOG ====='
-          if [ -f builds/eas-latest-build.log ]; then file builds/eas-latest-build.log || true; cat builds/eas-latest-build.log; else echo 'No EAS log file downloaded'; fi
+          echo '===== TARGET EAS BUILD LOG ====='
+          if [ -f builds/eas-target-build.log ]; then cat builds/eas-target-build.log; else echo 'No target EAS log downloaded'; fi
 
       - name: Persist status and diagnostic log
         if: github.event_name == 'push'
@@ -74,7 +73,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add builds/eas-builds-current.json builds/latest-build-summary.json builds/eas-latest-build.log 2>/dev/null || true
+          git add builds/eas-builds-current.json builds/latest-build-summary.json builds/eas-target-build.log 2>/dev/null || true
           git diff --cached --quiet && exit 0
-          git commit -m 'ci: capture latest EAS Android build diagnostics'
+          git commit -m 'ci: capture target EAS prebuild diagnostics'
           git push origin HEAD:main
