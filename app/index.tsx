@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { Pressable, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, SafeAreaView, StyleSheet, Text, View, BackHandler, Platform } from 'react-native';
 import { colors } from '@/src/theme';
 
 const AGE_KEY = 'celicor_age_confirmed_v1';
@@ -21,14 +21,16 @@ export default function AgeGate() {
     router.replace('/(tabs)');
   };
 
+  const exitApp = () => {
+    if (Platform.OS === 'android') BackHandler.exitApp();
+  };
+
   if (checking) return <SafeAreaView style={styles.screen} />;
 
   return (
     <SafeAreaView style={styles.screen}>
       <View style={styles.brandMark}>
-        <Text style={styles.brand}>CELICOR</Text>
-        <View style={styles.orangeLine} />
-        <Text style={styles.place}>LA CASTELLANA</Text>
+        <Image source={require('../assets/celicor-logo.png')} style={styles.logo} resizeMode="contain" />
       </View>
 
       <View style={styles.card}>
@@ -36,7 +38,7 @@ export default function AgeGate() {
         <Text style={styles.title}>Antes de brindar</Text>
         <Text style={styles.copy}>Debes tener la edad legal requerida para comprar bebidas alcohólicas en tu ubicación.</Text>
         <Pressable style={styles.primary} onPress={confirm}><Text style={styles.primaryText}>CONFIRMO QUE SOY MAYOR DE EDAD</Text></Pressable>
-        <Pressable style={styles.secondary}><Text style={styles.secondaryText}>Salir</Text></Pressable>
+        <Pressable style={styles.secondary} onPress={exitApp}><Text style={styles.secondaryText}>No soy mayor de edad</Text></Pressable>
       </View>
 
       <Text style={styles.legal}>CELICOR promueve el consumo responsable.</Text>
@@ -46,10 +48,8 @@ export default function AgeGate() {
 
 const styles = StyleSheet.create({
   screen:{ flex:1, backgroundColor:'#fff', padding:24, justifyContent:'space-between' },
-  brandMark:{ marginTop:36, alignItems:'center' },
-  brand:{ fontSize:42, fontWeight:'900', fontStyle:'italic', letterSpacing:-2, color:colors.navy },
-  orangeLine:{ width:132, height:7, borderRadius:8, backgroundColor:colors.orange, transform:[{rotate:'-8deg'}], marginTop:-15, marginBottom:12 },
-  place:{ fontSize:18, color:'#111', letterSpacing:2 },
+  brandMark:{ marginTop:24, alignItems:'center' },
+  logo:{ width:270, height:160 },
   card:{ backgroundColor:colors.background, borderRadius:28, padding:26, alignItems:'center' },
   ageCircle:{ width:72, height:72, borderRadius:36, backgroundColor:colors.navy, alignItems:'center', justifyContent:'center', marginBottom:18 },
   age:{ color:'#fff', fontSize:26, fontWeight:'900' },
