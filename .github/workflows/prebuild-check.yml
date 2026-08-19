@@ -1,0 +1,17 @@
+name: Fresh App Prebuild Check
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22.13.1
+      - run: npm install
+      - run: npx expo-doctor
+      - run: npx expo prebuild --clean --no-install --platform android

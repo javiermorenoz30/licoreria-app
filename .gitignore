@@ -1,12 +1,10 @@
 node_modules/
 .expo/
+android/
+ios/
 dist/
-web-build/
-*.log
-.DS_Store
 .env
 .env.*
-!.env.example
-credentials.json
-*.keystore
 *.jks
+*.keystore
+credentials.json

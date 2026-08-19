@@ -1,49 +1,37 @@
-# CELICOR La Castellana — App móvil
+# CELICOR La Castellana — Mobile App
 
-Aplicación móvil para Android y iOS construida con React Native + Expo y preparada para Supabase.
+Nueva aplicación móvil de ventas y delivery para CELICOR La Castellana.
+
+## Módulos
+
+- Tienda y catálogo
+- Búsqueda y categorías
+- Carrito persistente
+- Checkout y enlaces de pago
+- Pedidos e historial
+- Panel de administración
+- Agregar/editar productos e inventario
+- Gestión de enlaces de pago
+- Gestión de pedidos
+- Asignación de delivery
+- Panel de repartidor
+- Roles customer / admin / staff / driver
+- Verificación 18+
 
 ## Desarrollo
 
 ```bash
 npm install
+npm run doctor
+npm run prebuild:android
 npx expo start
 ```
 
-## Cuenta Expo
+## Backend
 
-Owner configurado: `jamz979712`
+La migración fresca está en `supabase/migrations/20260819_fresh_celicor_mobile.sql`.
 
-## Generar APK de prueba
+## Expo
 
-El repositorio incluye un workflow manual en GitHub Actions:
-
-`Build Android Preview APK`
-
-Antes de ejecutarlo, crea un token personal en Expo y guárdalo en GitHub como Repository Secret con el nombre exacto:
-
-`EXPO_TOKEN`
-
-El workflow se encarga de:
-
-1. autenticar Expo/EAS,
-2. vincular el proyecto con EAS,
-3. crear una clave temporal exclusiva para el APK de prueba,
-4. iniciar el build Android en la nube.
-
-La clave temporal se usa solamente para builds de prueba. La publicación final en Google Play utilizará credenciales de producción separadas.
-
-## Objetivo V1
-
-- Catálogo y búsqueda
-- Carrito
-- Registro / login
-- Delivery o retiro
-- Checkout
-- Pedidos e historial
-- Panel administrativo
-- Inventario y promociones
-- Verificación de mayoría de edad
-
-## Marca
-
-CELICOR La Castellana — Caracas, Venezuela.
+Owner: `jamz979712`
+Package: `com.celicorlacastellana.app`

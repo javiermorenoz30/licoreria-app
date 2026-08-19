@@ -4,7 +4,7 @@
     "slug": "celicor-la-castellana",
     "owner": "jamz979712",
     "scheme": "celicor",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
@@ -18,16 +18,9 @@
       "versionCode": 1
     },
     "plugins": ["expo-router"],
-    "experiments": {
-      "typedRoutes": true
-    },
+    "experiments": { "typedRoutes": true },
     "extra": {
-      "supabaseUrl": "https://uhggdsdsjmaffzuvhhim.supabase.co",
-      "supabasePublishableKey": "sb_publishable_nA55kOTI3p3qHl1Yb8xTAg_rJstvucj",
-      "router": {},
-      "eas": {
-        "projectId": "66a7679c-6d67-4188-94c8-6e8f3228f75c"
-      }
+      "eas": { "projectId": "66a7679c-6d67-4188-94c8-6e8f3228f75c" }
     }
   }
 }
