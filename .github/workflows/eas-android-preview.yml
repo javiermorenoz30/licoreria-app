@@ -6,6 +6,10 @@ on:
     branches: [main]
     paths:
       - '.github/build-apk-trigger'
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/build-apk-trigger'
 
 permissions:
   contents: write
@@ -102,6 +106,7 @@ jobs:
           } > builds/latest-status.txt
 
       - name: Persist EAS project link and build result
+        if: github.event_name == 'push'
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
