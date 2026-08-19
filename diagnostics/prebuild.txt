@@ -1,0 +1,17 @@
+- Creating native directory (./android)
+✔ Created native directory
+- Updating package.json
+✔ Updated package.json | no changes
+- Running prebuild
+✖ Prebuild failed
+Error: [android.dangerous]: withAndroidDangerousBaseMod: Unrecognised filter type - 133
+Error: [android.dangerous]: withAndroidDangerousBaseMod: Unrecognised filter type - 133
+    at n._reverseFilterLine (/home/runner/work/licoreria-app/licoreria-app/node_modules/jimp-compact/dist/jimp.js:1:238258)
+    at e.process (/home/runner/work/licoreria-app/licoreria-app/node_modules/jimp-compact/dist/jimp.js:1:40580)
+    at e.process (/home/runner/work/licoreria-app/licoreria-app/node_modules/jimp-compact/dist/jimp.js:1:511680)
+    at t.exports (/home/runner/work/licoreria-app/licoreria-app/node_modules/jimp-compact/dist/jimp.js:1:420110)
+    at e.read [as image/png] (/home/runner/work/licoreria-app/licoreria-app/node_modules/jimp-compact/dist/jimp.js:1:1865)
+    at Jimp.parseBitmap (/home/runner/work/licoreria-app/licoreria-app/node_modules/jimp-compact/dist/jimp.js:1:125704)
+    at Jimp.parseBitmap (/home/runner/work/licoreria-app/licoreria-app/node_modules/jimp-compact/dist/jimp.js:1:8514)
+    at /home/runner/work/licoreria-app/licoreria-app/node_modules/jimp-compact/dist/jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
