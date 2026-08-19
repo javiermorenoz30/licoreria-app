@@ -32,6 +32,9 @@ jobs:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
+      - name: Install app dependencies
+        run: npm install
+
       - name: Read latest Android builds
         shell: bash
         run: |
@@ -47,4 +50,4 @@ jobs:
           git add builds/eas-builds-current.json
           git diff --cached --quiet && exit 0
           git commit -m 'ci: refresh EAS Android build status'
-          git push
+          git push origin HEAD:main
