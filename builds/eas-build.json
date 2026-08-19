@@ -1,0 +1,39 @@
+[
+  {
+    "id": "31f40b79-d8f9-47f7-b175-8b9ac4992303",
+    "status": "NEW",
+    "platform": "ANDROID",
+    "artifacts": {},
+    "fingerprint": {
+      "id": "01a01b9b-3df8-71b6-8281-b4da9c9506ab",
+      "hash": "031988dbf5ef83fe78354297de37aa912653dff1"
+    },
+    "initiatingActor": {
+      "id": "5b1ebc1e-cf84-4add-8991-4ce7cc5f079a",
+      "displayName": "jamz979712"
+    },
+    "logFiles": [],
+    "app": {
+      "id": "66a7679c-6d67-4188-94c8-6e8f3228f75c",
+      "name": "celicor-la-castellana",
+      "slug": "celicor-la-castellana",
+      "ownerAccount": {
+        "id": "036c1f78-6686-450a-9304-67aac4ab2244",
+        "name": "jamz979712"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "appIdentifier": "com.celicorlacastellana.app",
+    "sdkVersion": "54.0.0",
+    "appVersion": "0.1.0",
+    "appBuildVersion": "1",
+    "gitCommitHash": "a027877ce8066ca9a3316e02db529feaaeef8cdd",
+    "gitCommitMessage": "ci: trigger automated Android preview build",
+    "priority": "NORMAL",
+    "createdAt": "2026-08-19T20:00:15.851Z",
+    "updatedAt": "2026-08-19T20:00:15.851Z",
+    "expirationDate": "2026-09-02T20:00:15.880Z",
+    "isForIosSimulator": false
+  }
+]
