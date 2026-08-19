@@ -17,18 +17,18 @@ jobs:
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
-      - name: Read fresh APK build and remote logs
+      - name: Read latest CELICOR APK build and remote logs
         shell: bash
         run: |
           eas build:list --platform android --limit 10 --json --non-interactive > /tmp/builds.json
           node <<'NODE'
           const fs=require('fs');
           const builds=JSON.parse(fs.readFileSync('/tmp/builds.json','utf8'));
-          const id='b72fc323-583b-4f9c-bbac-60fe60234e44';
+          const id='f484ecba-1281-409f-97b8-8ce60fa2899b';
           const build=builds.find(b=>b.id===id);
           if(!build){ console.error('Target build not found'); process.exit(2); }
           console.log('===== CELICOR EAS BUILD =====');
-          console.log(JSON.stringify({id:build.id,status:build.status,error:build.error||null,createdAt:build.createdAt,completedAt:build.completedAt||null,logFiles:(build.logFiles||[]).length},null,2));
+          console.log(JSON.stringify({id:build.id,status:build.status,artifacts:build.artifacts||{},error:build.error||null,createdAt:build.createdAt,completedAt:build.completedAt||null,logFiles:(build.logFiles||[]).length},null,2));
           fs.writeFileSync('/tmp/log-urls.txt',(build.logFiles||[]).join('\n')+'\n');
           NODE
           i=0
@@ -37,5 +37,5 @@ jobs:
             i=$((i+1))
             echo "===== REMOTE EAS LOG $i ====="
             curl --compressed --fail --location --silent --show-error "$url" -o "/tmp/eas-$i.log"
-            cat "/tmp/eas-$i.log"
+            tail -n 250 "/tmp/eas-$i.log"
           done < /tmp/log-urls.txt
