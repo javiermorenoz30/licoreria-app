@@ -29,7 +29,7 @@ jobs:
           if(!build){ console.error('Target build not found'); process.exit(2); }
           console.log('===== CELICOR EAS BUILD =====');
           console.log(JSON.stringify({id:build.id,status:build.status,error:build.error||null,createdAt:build.createdAt,completedAt:build.completedAt||null,logFiles:(build.logFiles||[]).length},null,2));
-          fs.writeFileSync('/tmp/log-urls.txt',(build.logFiles||[]).join('\n'));
+          fs.writeFileSync('/tmp/log-urls.txt',(build.logFiles||[]).join('\n')+'\n');
           NODE
           i=0
           while IFS= read -r url; do
