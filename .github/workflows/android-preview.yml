@@ -5,6 +5,10 @@ on:
     branches: [main]
     paths:
       - '.github/build-trigger'
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/build-trigger'
 permissions:
   contents: write
 jobs:
@@ -40,17 +44,8 @@ jobs:
           eas build --platform android --profile preview --non-interactive --no-wait --json > /tmp/eas-build.json 2> /tmp/eas-build.err
           code=$?
           set -e
-          node <<'NODE'
-          const fs=require('fs');
-          let build={};
-          try { const parsed=JSON.parse(fs.readFileSync('/tmp/eas-build.json','utf8')); build=Array.isArray(parsed)?parsed[0]||{}:parsed; } catch {}
-          const err=fs.existsSync('/tmp/eas-build.err')?fs.readFileSync('/tmp/eas-build.err','utf8'):'';
-          const url=build.id?`https://expo.dev/accounts/jamz979712/projects/celicor-la-castellana/builds/${build.id}`:'';
-          fs.writeFileSync('BUILD_LATEST.md',`# CELICOR Android Preview\n\nBuild ID: ${build.id||'not-created'}\n\nStatus: ${build.status||'unknown'}\n\n${url?`Expo: ${url}\n\n`:''}${err?`## EAS output\n\n\`\`\`text\n${err.slice(-5000)}\n\`\`\`\n`:''}`);
-          NODE
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add BUILD_LATEST.md
-          git commit -m 'ci: record latest CELICOR APK build' || true
-          git push origin HEAD:main || true
-          exit $code
+          echo '===== EAS JSON ====='
+          cat /tmp/eas-build.json || true
+          echo '===== EAS STDERR ====='
+          cat /tmp/eas-build.err || true
+          if [ "$code" -ne 0 ]; then exit "$code"; fi
