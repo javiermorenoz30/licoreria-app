@@ -1,0 +1,21 @@
+name: Check CELICOR EAS Build Status
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/eas-status-trigger'
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+      - name: Read fresh APK build
+        shell: bash
+        run: |
+          eas build:view b72fc323-583b-4f9c-bbac-60fe60234e44 --json > /tmp/build.json
+          echo '===== CELICOR EAS BUILD ====='
+          cat /tmp/build.json
