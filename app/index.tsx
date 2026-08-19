@@ -1,9 +1,0 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { router } from 'expo-router';
-import { useEffect, useState } from 'react';
-import { Pressable, SafeAreaView, StyleSheet, Text, View } from 'react-native';
-import { colors } from '@/src/core';
-import { Brand } from '@/src/ui';
-const KEY='celicor_age_confirmed_v3';
-export default function AgeGate(){const[ready,setReady]=useState(false);useEffect(()=>{AsyncStorage.getItem(KEY).then(v=>{if(v==='yes')router.replace('/(tabs)/home' as any);else setReady(true);});},[]);if(!ready)return <SafeAreaView style={s.screen}/>;return <SafeAreaView style={s.screen}><Brand/><View style={s.hero}><View style={s.circle}><Text style={s.age}>18+</Text></View><Text style={s.title}>Tu cava, a un toque.</Text><Text style={s.copy}>Para entrar y comprar debes tener la edad legal requerida para adquirir bebidas alcohólicas.</Text><Pressable style={s.button} onPress={async()=>{await AsyncStorage.setItem(KEY,'yes');router.replace('/(tabs)/home' as any)}}><Text style={s.buttonText}>SOY MAYOR DE EDAD</Text></Pressable><Text style={s.responsible}>Compra y consume responsablemente.</Text></View></SafeAreaView>}
-const s=StyleSheet.create({screen:{flex:1,backgroundColor:'#fff',padding:24,paddingTop:58,justifyContent:'space-between'},hero:{backgroundColor:colors.navy,borderRadius:32,padding:28,marginBottom:24},circle:{width:74,height:74,borderRadius:37,backgroundColor:colors.orange,alignItems:'center',justifyContent:'center'},age:{fontSize:27,fontWeight:'1000',color:colors.navy},title:{fontSize:34,fontWeight:'1000',color:'#fff',marginTop:28},copy:{color:'#D9E3FA',fontSize:15,lineHeight:23,marginTop:10},button:{backgroundColor:colors.orange,borderRadius:18,padding:17,alignItems:'center',marginTop:28},buttonText:{fontWeight:'1000',color:colors.navy},responsible:{color:'#98A8C8',fontSize:11,textAlign:'center',marginTop:16}});

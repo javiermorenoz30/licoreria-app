@@ -1,37 +1,18 @@
-# CELICOR La Castellana — Mobile App
+# CELICOR La Castellana — App móvil
 
-Nueva aplicación móvil de ventas y delivery para CELICOR La Castellana.
+Aplicación móvil de ventas para CELICOR La Castellana, reconstruida desde cero con Expo + React Native.
 
-## Módulos
+## Módulos V1
+- Verificación +18
+- Inicio estilo delivery
+- Catálogo y búsqueda
+- Carrito y checkout
+- Enlaces de pago configurables
+- Pedidos
+- Panel administrador
+- Alta y eliminación de productos
+- Inventario básico
+- Módulo de delivery/repartidores
+- Persistencia local para pruebas
 
-- Tienda y catálogo
-- Búsqueda y categorías
-- Carrito persistente
-- Checkout y enlaces de pago
-- Pedidos e historial
-- Panel de administración
-- Agregar/editar productos e inventario
-- Gestión de enlaces de pago
-- Gestión de pedidos
-- Asignación de delivery
-- Panel de repartidor
-- Roles customer / admin / staff / driver
-- Verificación 18+
-
-## Desarrollo
-
-```bash
-npm install
-npm run doctor
-npm run prebuild:android
-npx expo start
-```
-
-## Backend
-
-La migración fresca está en `supabase/migrations/20260819_fresh_celicor_mobile.sql`.
-
-## Expo
-
-Owner: `jamz979712`
-Package: `com.celicorlacastellana.app`
+La siguiente etapa conecta estos módulos a Supabase para sincronización multiusuario.

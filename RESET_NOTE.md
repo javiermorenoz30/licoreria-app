@@ -1,1 +1,0 @@
-Temporary reset marker. The repository is being rebuilt from scratch as CELICOR La Castellana mobile app.
