@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "CELICOR La Castellana",
+    "slug": "celicor-la-castellana",
+    "scheme": "celicor",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.celicorlacastellana.app"
+    },
+    "android": {
+      "package": "com.celicorlacastellana.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#F5A000"
+      }
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "supabaseUrl": "https://uhggdsdsjmaffzuvhhim.supabase.co",
+      "supabasePublishableKey": "sb_publishable_nA55kOTI3p3qHl1Yb8xTAg_rJstvucj"
+    }
+  }
+}
