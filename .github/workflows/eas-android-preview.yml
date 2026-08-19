@@ -8,7 +8,7 @@ on:
       - '.github/build-apk-trigger'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -37,10 +37,20 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Ensure EAS project is linked
-        run: eas init --force --non-interactive
+      - name: Link EAS project
+        id: init
+        continue-on-error: true
+        shell: bash
+        run: |
+          mkdir -p builds
+          set +e
+          eas init --force --non-interactive > builds/eas-init.log 2>&1
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
 
       - name: Create temporary preview signing key
+        if: steps.init.outputs.exit_code == '0'
         run: |
           keytool -genkeypair \
             -v \
@@ -67,5 +77,36 @@ jobs:
           }
           JSON
 
-      - name: Build Android APK
-        run: eas build --platform android --profile preview --non-interactive --wait
+      - name: Start Android APK build
+        id: easbuild
+        if: steps.init.outputs.exit_code == '0'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          eas build --platform android --profile preview --non-interactive --no-wait --json > builds/eas-build.json 2> builds/eas-build-error.log
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Write build status
+        shell: bash
+        run: |
+          init_code='${{ steps.init.outputs.exit_code }}'
+          build_code='${{ steps.easbuild.outputs.exit_code }}'
+          {
+            echo "CELICOR Android preview build"
+            echo "UTC: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            echo "EAS init exit code: ${init_code:-not-run}"
+            echo "EAS build exit code: ${build_code:-not-run}"
+          } > builds/latest-status.txt
+
+      - name: Persist EAS project link and build result
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add app.json builds/eas-init.log builds/eas-build.json builds/eas-build-error.log builds/latest-status.txt 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m 'ci: record Android preview build result'
+          git push
