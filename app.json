@@ -7,6 +7,12 @@
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "icon": "./assets/celicor-logo.png",
+    "splash": {
+      "image": "./assets/celicor-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.celicorlacastellana.app"
@@ -14,7 +20,8 @@
     "android": {
       "package": "com.celicorlacastellana.app",
       "adaptiveIcon": {
-        "backgroundColor": "#F5A000"
+        "foregroundImage": "./assets/celicor-logo.png",
+        "backgroundColor": "#FFFFFF"
       }
     },
     "plugins": ["expo-router"],
