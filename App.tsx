@@ -1,1 +1,1 @@
-export { default } from './App.NEW';
+export { default } from './App.CATALOG';
