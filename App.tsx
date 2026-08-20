@@ -1,1 +1,1 @@
-export { default } from './App.BRANDS';
+export { default } from './App.CATEGORIES';
